@@ -26,7 +26,8 @@
         .buttons {
             margin-top: 20px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             gap: 10px;
         }
         button {
@@ -35,8 +36,8 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
-            flex: 1;
-            max-width: 150px;
+            width: 80%;
+            max-width: 250px;
         }
         .accept {
             background-color: green;
@@ -45,6 +46,12 @@
         .decline {
             background-color: red;
             color: white;
+        }
+        .disclaimer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: red;
+            font-weight: bold;
         }
     </style>
     <script>
@@ -71,8 +78,9 @@
         <div class="buttons">
             <button class="accept" onclick="acceptLPG()">ACCEPT</button>
             <button class="decline" onclick="declineLPG()">DECLINE</button>
-        <p><strong>Disclaimer:</strong> ONLY PURCHASE GAS FROM TRUSTED DISTRIBUTORS</p>
         </div>
+        
+        <p class="disclaimer">ONLY PURCHASE GAS FROM TRUSTED DISTRIBUTORS</p>
     </div>
 </body>
 </html>
