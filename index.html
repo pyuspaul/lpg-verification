@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPRA LPG VERIFICATION SYSTEM</title>
+    <style>
+        body {
+            background-color: blue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 90%;
+            margin: auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        img {
+            width: 100%;
+            max-width: 300px;
+        }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            flex: 1;
+            max-width: 150px;
+        }
+        .accept {
+            background-color: green;
+            color: white;
+        }
+        .decline {
+            background-color: red;
+            color: white;
+        }
+    </style>
+    <script>
+        function acceptLPG() {
+            alert('We are happy for trusting and choosing us.');
+        }
+        function declineLPG() {
+            alert('We are sorry for not meeting your expectation, let’s rectify.');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://gobeba.com/wp-content/uploads/2019/03/IMG_0180.jpg" alt="LPG Cylinder">
+        <h2>EPRA LPG VERIFICATION SYSTEM</h2>
+        <p><strong>Distributor:</strong> Afrigas</p>
+        <p><strong>Batch Number:</strong> 123456789</p>
+        <p><strong>Last Refill Date:</strong> 10th Jan 2025</p>
+        <p><strong>Expiry Date:</strong> 30/12/2025</p>
+        <p><strong>Safety Instructions:</strong> Ensure the seal is intact. Check for leaks before use.</p>
+        <p><strong>Customer Support:</strong> Call +254 700 123 456</p>
+        <p><strong>EPRA Website:</strong> <a href="https://www.epra.go.ke/" target="_blank">https://www.epra.go.ke/</a></p>
+        
+        <div class="buttons">
+            <button class="accept" onclick="acceptLPG()">ACCEPT</button>
+            <button class="decline" onclick="declineLPG()">DECLINE</button>
+        <p><strong>Disclaimer:</strong> ONLY PURCHASE GAS FROM TRUSTED DISTRIBUTORS</p>
+        </div>
+    </div>
+</body>
+</html>
